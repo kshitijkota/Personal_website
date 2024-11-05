@@ -3,10 +3,13 @@ import { ReactTyped as Typed } from 'react-typed';
 import Button from '../Components/Button';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'; // Import icons
 import './HomePage.css';
+import ThreeBackground from '../Components/ThreeBackground';
 
 const HomePage = () => {
     return (
     <div className="home-container">
+        <ThreeBackground /> {/* Add background component */}
+
         <h1>Hi, I'm Kshitij Koushik Kota,</h1>
         <Typed
         className="typed-text"
@@ -22,7 +25,7 @@ const HomePage = () => {
         <Button />
 
         <div className="social-links">
-        <a href="https://github.com/kshitijkota" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/kshitijkota/" target="_blank" rel="noopener noreferrer">
             <FaGithub size={30} />
         </a>
         <a href="https://www.linkedin.com/in/kshitijkota/" target="_blank" rel="noopener noreferrer">
@@ -31,12 +34,6 @@ const HomePage = () => {
         <a href="mailto:kshitijkota22@gmail.com">
             <FaEnvelope size={30} />
         </a>
-        </div>
-
-        <div className="background-shapes">
-        <div className="circle"></div>
-        <div className="circle small"></div>
-        <div className="circle large"></div>
         </div>
     </div>
     );
